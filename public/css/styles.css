@@ -3,9 +3,9 @@
 }*/
 
 img {
-    width: 650px;
+    width: 550px;
     height: 370px;
-    margin-left: 1px;
+    margin-left: 40px;
     ;
 }
 
@@ -22,6 +22,7 @@ body {
 
 .main-content {
     flex-grow: 1;
+    /* color: black; */
     /*telling flex box to tell all the left over place*/
 }
 
@@ -85,4 +86,15 @@ button:hover {
     background-color: white;
     border: black, 2px;
     color: black;
+}
+
+.content {
+    color: rgb(114, 102, 102);
+    border-top: 1px solid black;
+    padding-top: 5%;
+}
+
+.content-main {
+    color: rgb(114, 102, 102);
+    padding-top: 5%;
 }

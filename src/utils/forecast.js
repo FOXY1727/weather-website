@@ -14,9 +14,14 @@ const forecast = (longitude, latitude, callback) => {
                 temp: body.current.temperature,
                 feelslike: body.current.feelslike,
                 place: body.location.name + ',' + body.location.region + ',' + body.location.country,
-                weather: body.current.weather_descriptions
+                weather: body.current.weather_descriptions,
+                time: body.current.observation_time,
+                clouds: body.current.cloudcover,
+                humidity: body.current.humidity
             }
-            callback(undefined, data)
+            const forcst = `Observed at ${data.time}
+            ${data.weather[0]}. It is currently ${data.temp} degress out, but it feels like ${data.feelslike}. The sky is covered with ${data.clouds}% clouds. And humidity is ${data.humidity}g.m-3.`
+            callback(undefined, forcst)
         }
     })
 }
