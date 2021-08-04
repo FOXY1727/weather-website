@@ -1,0 +1,88 @@
+/* h1 {
+    color: rgb(50, 12, 155);
+}*/
+
+img {
+    width: 650px;
+    height: 370px;
+    margin-left: 1px;
+    ;
+}
+
+body {
+    color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+    /*telling flex box to tell all the left over place*/
+}
+
+footer {
+    /* background: blueviolet; */
+    border-top: 1px solid rgb(41, 38, 38);
+    /* padding: 10px 0; */
+    color: rgb(143, 141, 137);
+    margin-top: 16px;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 65px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+input {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+input:focus {
+    border: 3px solid rgb(190, 180, 180);
+    border-bottom: none;
+}
+
+button {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5%;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border: black, 2px;
+    color: black;
+}
