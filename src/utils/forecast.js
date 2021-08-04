@@ -20,7 +20,7 @@ const forecast = (longitude, latitude, callback) => {
                 humidity: body.current.humidity
             }
             const forcst = `Observed at ${data.time}
-            ${data.weather[0]}. It is currently ${data.temp} degress out, but it feels like ${data.feelslike}. The sky is covered with ${data.clouds}% clouds. And humidity is ${data.humidity}g.m-3.`
+            ${data.weather[0]}. It is currently ${data.temp} degress out, but it feels like ${data.feelslike}. The sky is covered with ${data.clouds}% clouds. And humidity is ${data.humidity}%.`
             callback(undefined, forcst)
         }
     })
