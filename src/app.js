@@ -47,21 +47,25 @@
   app.get('', (req, res) => {
       res.render('index', {
           title: 'Weather',
-          name: 'Anjali Sharma'
+          name1: 'Anjali Sharma',
+          name2: 'Manish Kumar Mishra'
+
       })
   })
 
   app.get('/about', (req, res) => {
       res.render('about', {
           title: 'About Me',
-          name: 'Anjali Sharma'
+          name1: 'Anjali Sharma',
+          name2: 'Manish Kumar Mishra'
       })
   })
 
   app.get('/help', (req, res) => {
       res.render('help', {
           title: 'Help',
-          name: 'Anjali Sharma',
+          name1: 'Anjali Sharma',
+          name2: 'Manish Kumar Mishra',
           helptxt: 'You have to help yourself 🤣😁😉'
       })
   })
@@ -102,7 +106,8 @@
   app.get('/help/*', (req, res) => {
       res.render('error404', {
           title: 'Error 404',
-          name: 'Anjali Sharma',
+          name1: 'Anjali Sharma',
+          name2: 'Manish Kumar Mishra',
           error: 'Help article not written'
       })
   })
@@ -110,7 +115,8 @@
   app.get('*', (req, res) => {
       res.render('error404', {
           title: 'Error 404',
-          name: 'Anjali Sharma',
+          name1: 'Anjali Sharma',
+          name2: 'Manish Kumar Mishra',
           error: 'Page not found!!🚩'
       })
   })
